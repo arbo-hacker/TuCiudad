@@ -1,0 +1,34 @@
+<?php
+echo "\n";
+echo "<TABLE WIDTH=100% BORDER=0 CELLPADDING=0 CELLSPACING=0>\n";
+echo "	<TR>\n";
+echo "		<TD ROWSPAN=3>\n";
+echo "			<IMG SRC=\"themes/SimpleTech/images/SimpleTech-ft_01.gif\" WIDTH=15 HEIGHT=147></TD>\n";
+echo "		<TD ROWSPAN=3>\n";
+echo "			<IMG SRC=\"themes/SimpleTech/images/SimpleTech-ft_02.gif\" WIDTH=30 HEIGHT=147></TD>\n";
+echo "		<TD ROWSPAN=3 background=\"themes/SimpleTech/images/SimpleTech-ft_lt.gif\" WIDTH=50% HEIGHT=147></TD>\n";
+echo "		<TD COLSPAN=4 align=center valign=middle><img src=\"themes/SimpleTech/images/SimpleTech-ft_msg.gif\" WIDTH=670 HEIGHT=58></TD>\n";
+echo "		<TD ROWSPAN=3 background=\"themes/SimpleTech/images/SimpleTech-ft_rt.gif\" WIDTH=50% HEIGHT=147></TD>\n";
+echo "		<TD ROWSPAN=3>\n";
+echo "			<IMG SRC=\"themes/SimpleTech/images/SimpleTech-ft_06.gif\" WIDTH=30 HEIGHT=147></TD>\n";
+echo "		<TD ROWSPAN=3>\n";
+echo "			<IMG SRC=\"themes/SimpleTech/images/SimpleTech-ft_07.gif\" WIDTH=15 HEIGHT=147></TD>\n";
+echo "	</TR>\n";
+echo "	<TR>\n";
+echo "		<TD ROWSPAN=2>\n";
+echo "			<IMG SRC=\"themes/SimpleTech/images/SimpleTech-ft_08.gif\" WIDTH=100 HEIGHT=89></TD>\n";
+echo "\n";
+echo "<!-- Banner Ad -->\n";
+echo "<TD COLSPAN=2 align=center valign=middle background=\"themes/SimpleTech/images/SimpleTech-ft_banner.gif\" WIDTH=471 HEIGHT=71>$showbanners</TD>\n";
+echo "<!-- Banner Ad -->\n";
+echo "\n";
+echo "		<TD ROWSPAN=2>\n";
+echo "			<IMG SRC=\"themes/SimpleTech/images/SimpleTech-ft_10.gif\" WIDTH=99 HEIGHT=89></TD>\n";
+echo "	</TR>\n";
+echo "	<TR>\n";
+echo "		<TD>\n";
+echo "			<IMG SRC=\"themes/SimpleTech/images/SimpleTech-ft_11.gif\" WIDTH=222 HEIGHT=18></TD>\n";
+echo "		<TD><img src=\"themes/SimpleTech/images/SimpleTech-ft_gen.gif\" WIDTH=249 HEIGHT=18></TD>\n";
+echo "	</TR>\n";
+echo "</TABLE>\n";
+?>

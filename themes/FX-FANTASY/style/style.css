@@ -1,0 +1,29 @@
+FONT	{FONT-FAMILY: Verdana,Helvetica; FONT-SIZE: 10px}
+TD		{FONT-FAMILY: Verdana,Helvetica; FONT-SIZE: 10px}
+BODY	{FONT-FAMILY: Verdana,Helvetica; FONT-SIZE: 10px}
+P		{FONT-FAMILY: Verdana,Helvetica; FONT-SIZE: 10px}
+DIV		{FONT-FAMILY: Verdana,Helvetica; FONT-SIZE: 10px}
+
+body {background-color:#A9ADB6; scrollbar-face-color:#787C88; scrollbar-highlight-color:#ffffff; scrollbar-shadow-color:#ffffff; scrollbar-3dlight-color:#616161; scrollbar-arrow-color:#A1A1A1; scrollbar-track-color:#32353D; scrollbar-darkshadow-color:#505460;}
+
+FORM 		 {FONT-FAMILY: Verdana,Helvetica; FONT-SIZE: 10px}
+A:link       {BACKGROUND: none; COLOR: #000000; FONT-SIZE: 10px; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none}
+A:active     {BACKGROUND: none; COLOR: #000000; FONT-SIZE: 10px; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none}
+A:visited    {BACKGROUND: none; COLOR: #000000; FONT-SIZE: 10px; 
+FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none}
+A:hover      {BACKGROUND: none; COLOR: #ffffff; FONT-SIZE: 10px; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none}
+.title 		 {BACKGROUND: none; COLOR: #FFFFFF; FONT-SIZE: 14px; FONT-WEIGHT: bold; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none}
+.content 	 {BACKGROUND: none; COLOR: #EAEBEC; FONT-SIZE: 10px; FONT-FAMILY: Verdana, Helvetica}
+.block-title {BACKGROUND: none; COLOR: #ffffff; FONT-SIZE: 10px; FONT-FAMILY: Verdana, Helvetica}
+.storytitle  {BACKGROUND: none; COLOR: #ffffff; FONT-SIZE: 12px; FONT-WEIGHT: bold; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none}
+.storycat	 {BACKGROUND: none; COLOR: #FFFFff; FONT-SIZE: 10px; FONT-WEIGHT: bold; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: underline}
+.boxtitle 	 {BACKGROUND: none; COLOR: #FFFFff; FONT-SIZE: 10px; FONT-WEIGHT: bold; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none}
+.boxcontent  {BACKGROUND: none; COLOR: #CED0D5; FONT-SIZE: 10px; FONT-FAMILY: Verdana, Helvetica}
+.option 	 {BACKGROUND: none; COLOR: #787C88; FONT-SIZE: 10px; FONT-WEIGHT: bold; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none}
+.tiny		 {BACKGROUND: none; COLOR: #ffffff; FONT-SIZE: 10px; FONT-WEIGHT: normal; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none}
+.small		 {BACKGROUND: none; COLOR: #ffffff; FONT-SIZE: 9px; FONT-WEIGHT: normal; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none}
+
+INPUT 		{FONT-SIZE: 11px; FONT-FAMILY: Verdana,Helvetica; color: #FFFFff; background-color : #787C88; border: #FFFFff; border-style: solid; border-top-width : 1px; border-right-width : 1px; border-bottom-width : 1px; border-left-width : 1px}
+input.button {border-top-width : 1px; border-right-width : 1px; border-bottom-width : 1px; border-left-width : 1px}
+TEXTAREA	{FONT-SIZE: 11px; FONT-FAMILY: Verdana,Helvetica; color: #ffffff; background-color : #575A64; border: #ffffff; border-style: solid; border-top-width : 1px; border-right-width : 1px; border-bottom-width : 1px; border-left-width : 1px}
+select {font-size: 11px; background-color : #3E4046; color : #c8c8c8; font-family: Verdana, Geneva, Arial, Helvetica; border: #ffffff; border-style: solid; border-top-width : 1px; border-right-width : 1px; border-bottom-width : 1px; border-left-width : 1px}

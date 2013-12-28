@@ -1,0 +1,302 @@
+/*------------------------------------------------------------------
+| General page style. The scroll bar colors only visible in IE5.5+ |
+------------------------------------------------------------------*/
+body {
+  scrollbar-3dlight-color: #6699CC;
+  scrollbar-highlight-color: #99CCFF;
+  scrollbar-face-color: #6699CC;
+  scrollbar-arrow-color:  #99CCFF;
+  scrollbar-shadow-color: #336699;
+  scrollbar-darkshadow-color: #000000;
+  scrollbar-track-color: #6699CC; }
+/*---------------------------------------
+| General font families for common tags |
+---------------------------------------*/
+font,th,td,p {
+  font-family: Verdana, Arial, Helvetica, sans-serif; }
+a:link,a:active,a:visited {
+  text-decoration: none;
+  color : #336699; }
+a:hover	{
+  text-decoration: underline;
+  color : #6699CC; }
+hr {
+  height: 0px;
+  border: solid #6699CC 0px;
+  border-top-width: 1px;}
+/*-------------------------------------------------------------------
+| This is the border line & background color around the entire page |
+-------------------------------------------------------------------*/
+.bodyline {
+  background-color: #99CCFF;
+  border: 4px #336699 double; }
+/*--------------------------------------------------
+| This is the outline around the main forum tables |
+--------------------------------------------------*/
+.forumline {
+  background-color: #336699;
+  border: 3px #99CCFF ridge; }
+.otherline {
+  background-color: #C0E0FF;
+  border: 3px #99CCFF ridge; }
+/*----------------------------------------
+| Main table cell colors and backgrounds |
+----------------------------------------*/
+td.row1	{ background-color: #D4EAFE; }
+td.row2	{ background-color: #C0E0FF; }
+td.row3	{ background-color: #ADD6FE; }
+/*---------------------------------------------------------
+| Header cells - the blue and silver gradient backgrounds |
+---------------------------------------------------------*/
+th {
+  color: #99CCFF;
+  font-size: 11px;
+  font-weight : bold; 
+  background-color: #336699;
+  height: 25px; }
+td.cat,td.catHead,td.catSides,td.catLeft,td.catRight,td.catBottom {
+  background-color: #ADD6FE;
+  border: #FFFFFF;
+  border-style: solid;
+  height: 28px; }
+/*-----------------------------------------------------------------
+| Setting additional nice inner borders for the main table cells. |
+| The names indicate which sides the border will be on.           |
+| Don't worry if you don't understand this, just ignore it :-)    |
+-----------------------------------------------------------------*/
+td.cat,td.catHead,td.catBottom {
+  height: 28px;
+  border-width: 0px 0px 0px 0px; }
+th.thHead,th.thSides,th.thTop,th.thLeft,th.thRight,th.thBottom,th.thCornerL,th.thCornerR {
+  font-weight: bold;
+  border: #FFFFFF;
+  border-style: solid;
+  height: 28px; }
+td.row3Right {
+  background-color: #ADD6FE;
+  border: #FFFFFF;
+  border-style: solid; }
+td.spaceRow {
+  background-color: #6699CC;
+  border: #FFFFFF;
+  border-style: solid; }
+th.thHead,td.catHead {
+  font-size: 12px;
+  border-width: 0px 0px 0px 0px; }
+
+th.thSides,td.catSides,td.spaceRow  { border-width: 0px 0px 0px 0px; }
+th.thRight,td.catRight,td.row3Right { border-width: 0px 0px 0px 0px; }
+th.thLeft,td.catLeft	            { border-width: 0px 0px 0px 0px; }
+th.thBottom,td.catBottom            { border-width: 0px 0px 0px 0px; }
+th.thTop	                    { border-width: 0px 0px 0px 0px; }
+th.thCornerL                        { border-width: 0px 0px 0px 0px; }
+th.thCornerR                        { border-width: 0px 0px 0px 0px; }
+/*---------------------------------------------------------------------
+| The largest text used in the index page title and toptic title etc. |
+---------------------------------------------------------------------*/
+.maintitle {
+  font-weight: bold;
+  font-size: 22px;
+  font-family: "Trebuchet MS",Verdana, Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  line-height: 120%;
+  color: #336699; }
+/*--------------
+| General text |
+--------------*/
+.gen      { font-size : 12px; }
+.genmed   { font-size : 11px; }
+.gensmall { font-size : 10px; }
+
+.gen,.genmed,.gensmall {
+  color : #336699; }
+a.gen,a.genmed,a.gensmall,a.gensmallmark {
+  color: #336699;
+  text-decoration: none; }
+a.gen:hover,a.genmed:hover,a.gensmall:hover {
+  color: #6699CC;
+  text-decoration: underline; }
+a.gensmallmark:hover {
+  color: #FFFFFF;
+  text-decoration: underline; }
+/*--------------------------------------------------------------
+| The register, login, search etc links at the top of the page |
+--------------------------------------------------------------*/
+.mainmenu {
+  font-size: 11px;
+  font-weight: bold;
+  color: #336699; }
+td.mainmenu {
+  font-size: 11px;
+  background-color: #D4EAFE; }
+.menuline {
+  background-color: #336699;
+  border: 1px #336699 solid; }
+a.mainmenu {
+  text-decoration: none;
+  font-weight: bold;
+  color: #336699;  }
+a.mainmenu:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #6699CC; }
+/*-----------------------
+| Forum category titles |
+-----------------------*/
+.cattitle {
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #336699; }
+a.cattitle {
+  text-decoration: none;
+  color: #336699; }
+a.cattitle:hover {
+  text-decoration: underline;
+  color: #FFFFFF; }
+/*-------------------------------------------------------------
+| Forum title: Text and link to the forums used in: index.php |
+-------------------------------------------------------------*/
+.forumlink {
+  font-weight: bold;
+  font-size: 12px;
+  color: #336699; }
+a.forumlink {
+  text-decoration: none;
+  color: #336699; }
+a.forumlink:hover {
+  text-decoration: underline;
+  color: #6699CC; }
+/*---------------------------------------------------------------------------------------
+| Used for the navigation text, (Page 1,2,3 etc) and the navigation bar when in a forum |
+---------------------------------------------------------------------------------------*/
+.nav {
+  font-weight: bold;
+  font-size: 11px;
+  color: #336699;}
+a.nav, a.navnextprev {
+  text-decoration: none;
+  color: #336699; }
+a.nav:hover {
+  text-decoration: underline;
+  color: #6699CC; }
+a.navnextprev:hover {
+  text-decoration: underline;
+  color: #FFFFFF; }
+/*------------------------------------------------------------------
+| Name of poster in viewmsg.php and viewtopic.php and other places |
+------------------------------------------------------------------*/
+.name {
+  font-size: 11px;
+  color: #336699;}
+/*------------------------------------------
+| Location, number of posts, post date etc |
+------------------------------------------*/
+.postdetails {
+  font-size: 10px;
+  color: #336699; }
+/*-----------------------------------------
+| The content of the posts (body of text) |
+-----------------------------------------*/
+.postbody {
+  font-size: 12px;
+  line-height: 18px; 
+  color: #6397C9; }
+a.postlink:link	{
+  text-decoration: none;
+  color: #336699; }
+a.postlink:visited {
+  text-decoration: none;
+  color: #336699; }
+a.postlink:hover {
+  text-decoration: underline;
+  color: #6699CC; }
+/*---------------------
+| Quote & Code blocks |
+---------------------*/
+.code { 
+  font-family: Courier, "Courier New", sans-serif;
+  font-size: 11px;
+  color: #336699;
+  background-color: #FAFAFA;
+  border: #336699;
+  border-style: solid;
+  border-left-width: 1px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px; }
+.quote {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #336699;
+  line-height: 125%;
+  background-color: #FAFAFA;
+  border: #336699;
+  border-style: solid;
+  border-left-width: 1px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px; }
+/*---------------------------
+| Copyright and bottom info |
+---------------------------*/
+.copyright {
+  font-size: 10px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #336699;
+  letter-spacing: -1px; }
+a.copyright {
+  color: #336699;
+  text-decoration: none; }
+a.copyright:hover {
+  color: #6699CC;
+  text-decoration: underline; }
+/*---------------
+| Form elements |
+---------------*/
+input,textarea {
+  color: #336699;
+  font: normal 11px Verdana, Arial, Helvetica, sans-serif;
+  border-color: #336699; }
+  
+select {  
+  color: #336699;
+  font: normal 11px Verdana, Arial, Helvetica, sans-serif;
+  border-color: #336699;
+  background-color: #99CCFF; }
+
+/*----------------------------------------
+| The text input fields background color |
+----------------------------------------*/
+input.post, textarea.post {
+  background-color: #FAFAFA; }
+input {
+  text-indent: 2px; }
+/*-----------------------------------------------------
+| The buttons used for bbCode styling in message post |
+-----------------------------------------------------*/
+input.button {
+  background-color: #99CCFF;
+  color: #336699;
+  font-size: 11px;
+  font-family: Verdana, Arial, Helvetica, sans-serif; }
+/*-------------------------------
+| The main submit button option |
+-------------------------------*/
+input.mainoption {
+  background-color: #99CCFF;
+  font-weight: bold; }
+/*-------------------------
+| None-bold submit button |
+-------------------------*/
+input.liteoption {
+  background-color: #99CCFF;
+  font-weight: normal; }
+/*-------------------------------------------------------------------
+| This is the line in the posting page which shows the rollover     |
+| help line. This is actually a text box, but if set to be the same |
+| color as the background no one will know ;)                       |
+-------------------------------------------------------------------*/
+.helpline {
+  background-color: #C0E0FF;
+  border-style: none; }

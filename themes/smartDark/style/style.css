@@ -1,0 +1,45 @@
+FONT	{FONT-FAMILY: Verdana,Helvetica; FONT-SIZE: 10px}
+TD		{FONT-FAMILY: Verdana,Helvetica; FONT-SIZE: 10px}
+BODY	{FONT-FAMILY: Verdana,Helvetica; FONT-SIZE: 10px}
+P		{FONT-FAMILY: Verdana,Helvetica; FONT-SIZE: 10px}
+DIV		{FONT-FAMILY: Verdana,Helvetica; FONT-SIZE: 10px}
+
+/* Form elements */
+input{border-color: #000000;color:#000000;text-indent:2px;font:normal 10px Verdana,Arial,Helvetica,sans-serif}
+textarea{border-color: #000000;color:#000000;font:normal 10px Verdana,Arial,Helvetica,sans-serif}
+select{border-color: #000000;color:#000000;background-color: #6E6E6E;font:normal 10px Verdana,Arial,Helvetica,sans-serif}
+
+/* The buttons used for bbCode styling in message post */
+input.button{background-color: #6E6E6E;font:10px Verdana,Arial,Helvetica,sans-serif}
+
+/* The main submit button option */
+input.mainoption{background-color: #6E6E6E;font-weight:bold}
+
+/* None-bold submit button */
+input.liteoption{background-color: #6E6E6E;font-weight:normal}
+
+/* This is the line in the posting page which shows the rollover
+help line. This is actually a text box,but if set to be the same
+colour as the background no one will know;)
+*/
+.helpline{background:#6E6E6E;border-style:none}
+
+/* Quote & Code blocks */
+.code{background: #6E6E6E;border: 1px solid #A0A0A0;color: #fff8dc;font:11px Courier,'Courier New',sans-serif}
+.quote{background: #6E6E6E;border: 1px solid #A0A0A0;color:#e7e7e7;font:11px/125% Verdana,Arial,Helvetica,sans-serif}
+
+.bodyline{background: #000000; border: 1px solid #D1D7DC}
+body{background: #474747;color: #DCDCDC;font:10px Verdana,Arial,Helvetica,sans-serif;scrollbar-3dlight-color: #888888;scrollbar-arrow-color: #888888;scrollbar-darkshadow-color: #101010;scrollbar-face-color: #363636;scrollbar-highlight-color: #363636;scrollbar-shadow-color: #363636;scrollbar-track-color: #2A2A2A;}
+
+a:link,a:active,a:visited{color:#AAAAAA;text-decoration:none; FONT-SIZE: 10px}
+a:hover{color: #EEEEEE;text-decoration:underline; FONT-SIZE: 10px}
+.title 		 {BACKGROUND: none; COLOR: #DCDCDC; FONT-SIZE: 14px; FONT-WEIGHT: bold; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none}
+.content 	 {BACKGROUND: none; COLOR: #DCDCDC; FONT-SIZE: 10px; FONT-FAMILY: Verdana, Helvetica}
+.block-title {BACKGROUND: none; COLOR: #DCDCDC; FONT-SIZE: 11px; FONT-FAMILY: Verdana, Helvetica}
+.storytitle  {BACKGROUND: none; COLOR: #DCDCDC; FONT-SIZE: 12px; FONT-WEIGHT: bold; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none}
+.storycat	 {BACKGROUND: none; COLOR: #DCDCDC; FONT-SIZE: 10px; FONT-WEIGHT: bold; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: underline}
+.boxtitle 	 {BACKGROUND: none; COLOR: #DCDCDC; FONT-SIZE: 10px; FONT-WEIGHT: bold; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none}
+.boxcontent  {BACKGROUND: none; COLOR: #DCDCDC; FONT-SIZE: 10px; FONT-FAMILY: Verdana, Helvetica}
+.option 	 {BACKGROUND: none; COLOR: #DCDCDC; FONT-SIZE: 10px; FONT-WEIGHT: bold; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none}
+.tiny		 {BACKGROUND: none; COLOR: #DCDCDC; FONT-SIZE: 10px; FONT-WEIGHT: normal; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none}
+.small		 {BACKGROUND: none; COLOR: #DCDCDC; FONT-SIZE: 9px; FONT-WEIGHT: normal; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none}

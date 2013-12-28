@@ -1,0 +1,7 @@
+Si lo deseas puedes usar agregar el down-logo.gif y el web.gif
+
+/html/modules/download/images/down-logo.gif
+/html/modules/Web_Link/images/web.gif
+
+
+y si no los usas me da igual pex ya tu ves que haces.

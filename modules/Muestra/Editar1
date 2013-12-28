@@ -1,0 +1,15 @@
+			$res2=mysql_query("select * from nuke_telefonos where IDEmpresa=$row[ID]",$lin);
+			while($row2 = mysql_fetch_array($res2))
+			{
+				echo "<tr height=23>
+					<td class=content-blk vAlign=top width=24%>&nbsp;</td>
+					<td class=content-blk vAlign=top width=2%>&nbsp;</td>
+					<td class=content-blk vAlign=top width=74%>&nbsp;</td>
+					</tr><tr height=23>
+					<td class=content-blk vAlign=top width=24%><b>$row2[Tipo]</b></td>
+					<td class=content-blk vAlign=top width=2%>:</td>
+					<td class=content-blk vAlign=top width=74%>$row2[Telefono]<br>
+			&nbsp;</td>
+			</tr>
+				";
+			}

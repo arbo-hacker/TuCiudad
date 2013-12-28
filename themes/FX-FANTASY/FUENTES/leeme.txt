@@ -1,0 +1,7 @@
+ADJUNTOS ADJUNTOS:
+
+- opciones_flash.swi - Generado con Swish version 2.0 Español.
+- Termina0.ttf       - Archivo tipo fuente para windows.
+..
+
+

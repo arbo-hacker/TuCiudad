@@ -1,0 +1,339 @@
+
+<style>
+<!--
+.skin0 {
+position:absolute;
+text-align:left;
+width:150px;
+border:2px solid ffffff;
+background-color:707880;
+font-family:Verdana;
+font-size: 8pt;
+line-height:15px;
+cursor:default;
+visibility:hidden;
+}
+.skin1 {
+cursor:default;
+font:menutext;
+position:absolute;
+text-align:left;
+font-family: arial, Helvetica, sans-serif;
+font-size: 8pt;
+width:120px;
+background-color:menu;
+border:1 solid buttonface;
+visibility:hidden;
+border:2 outset buttonhighlight;
+}
+.menuitems {
+padding-left:15px;
+padding-right:10px;
+}
+-->
+</style>
+
+<SCRIPT LANGUAGE="JavaScript1.2">
+
+var menuskin = "skin0"; 
+var display_url = 0; 
+function showmenuie5() {
+var rightedge = document.body.clientWidth-event.clientX;
+var bottomedge = document.body.clientHeight-event.clientY;
+if (rightedge < ie5menu.offsetWidth)
+ie5menu.style.left = document.body.scrollLeft + event.clientX - ie5menu.offsetWidth;
+else
+ie5menu.style.left = document.body.scrollLeft + event.clientX;
+if (bottomedge < ie5menu.offsetHeight)
+ie5menu.style.top = document.body.scrollTop + event.clientY - ie5menu.offsetHeight;
+else
+ie5menu.style.top = document.body.scrollTop + event.clientY;
+ie5menu.style.visibility = "visible";
+return false;
+}
+function hidemenuie5() {
+ie5menu.style.visibility = "hidden";
+}
+function highlightie5() {
+if (event.srcElement.className == "menuitems") {
+event.srcElement.style.backgroundColor = "BABEC2";
+event.srcElement.style.color = "white";
+if (display_url)
+window.status = event.srcElement.url;
+   }
+}
+function lowlightie5() {
+if (event.srcElement.className == "menuitems") {
+event.srcElement.style.backgroundColor = "";
+event.srcElement.style.color = "black";
+window.status = "";
+   }
+}
+function jumptoie5() {
+if (event.srcElement.className == "menuitems") {
+if (event.srcElement.getAttribute("target") != null)
+window.open(event.srcElement.url, event.srcElement.getAttribute("target"));
+else
+window.location = event.srcElement.url;
+   }
+}
+//  End -->
+</script>
+
+
+
+
+
+
+
+
+<!-- STEP TWO: Copia este pedaso de codigo en cuaquier editor html y editalo como te guste el menu luego lo reemplazas y guardas  -->
+
+<!-- FX-FANTASY : jScript Click Derecho  -->
+
+<div id="ie5menu" class="skin0" onMouseover="highlightie5()" onMouseout="lowlightie5()" onClick="jumptoie5();">
+<img border="0" src="./themes/FX-FANTASY/imagenes/main_de1.jpg" width="170" height="37">
+<div class="menuitems" url="modules.php?name=Your_Account">Tu Cuenta</div>
+<div class="menuitems" url="modules.php?name=Your_Account&op=new_user">Registrate</div>
+<hr size="1" color="#BABEC2">
+<div class="menuitems" url="modules.php?name=Downloads">Downloads</div>
+<div class="menuitems" url="modules.php?name=Web_Links">Enlaces Web</div>
+<hr size="1" color="#BABEC2">
+<div class="menuitems" url="modules.php?name=Feedback">Contacto</div>
+<div class="menuitems" url="http://www.google.com">Salir
+  
+</div>
+<p><img border="0" src="./themes/FX-FANTASY/imagenes/main_de2.jpg" width="170" height="45"></div>
+<script language="JavaScript1.2">
+if (document.all && window.print) {
+ie5menu.className = menuskin;
+document.oncontextmenu = showmenuie5;
+document.body.onclick = hidemenuie5;
+}
+</script>
+
+<!-- FX-FANTASY : fin del codigo del menu  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script language="JavaScript">
+<!--
+// Copyright (c) 1996-1997 Tomer Shiran. All rights reserved.
+// Permission given to use the script provided that this notice remains as is.
+// Additional scripts can be found at http://www.geocities.com/~yehuda/
+
+// set speed of banner (pause in milliseconds between characters)
+var speed = 50 // decrease value to increase speed (must be positive)
+
+// set pause between completion of message and beginning of following message
+var pause = 3000 // increase value to increase pause
+
+// set initial values
+var timerID = null
+var bannerRunning = false
+
+// create global array
+var ar = new Array()
+
+// assign the strings to the array's elements
+ar[0] = "::: Hacking underground Venezolano :::"
+ar[1] = " Servicios Internet, Diseño web, Programacion, Soporte Tecnico, Marketing, y mas....."
+ar[2] = "..... FX-FANTASY - Compatible con PHPNuke 6.x.....7.x"
+ar[3] = "..... Bajalo en mi web ....."
+ar[4] = ".....  http://www.arbo.com.ve    ThE bEsT ....."
+ar[5] = "..... Visita el foro http://test.foros.elguille.info  ....."
+ar[6] = "..... ArBo CoRpOrAtIoN ....."
+
+// set index of first message to be displayed first
+var currentMessage = 0
+
+// set index of last character to be displayed first
+var offset = 0
+
+// stop the banner if it is currently running
+function stopBanner() {
+	// if banner is currently running
+	if (bannerRunning)
+		// stop the banner
+		clearTimeout(timerID)
+
+	// timer is now stopped
+	bannerRunning = false
+}
+
+// start the banner
+function startBanner() {
+	// make sure the banner is stopped
+	stopBanner()
+
+	// start the banner from the current position
+	showBanner()
+}
+
+// type-in the current message
+function showBanner() {
+	// assign current message to variable
+	var text = ar[currentMessage]
+
+	// if current message has not finished being displayed
+	if (offset < text.length) {
+		// if last character of current message is a space
+		if (text.charAt(offset) == " ")
+			// skip the current character
+			offset++			
+
+		// assign the up-to-date to-be-displayed substring
+		// second argument of method accepts index of last character plus one
+		var partialMessage = text.substring(0, offset + 1) 
+
+		// display partial message in status bar
+		window.status = partialMessage
+
+		// increment index of last character to be displayed
+		offset++ // IE sometimes has trouble with "++offset"
+
+		// recursive call after specified time
+		timerID = setTimeout("showBanner()", speed)
+
+		// banner is running
+		bannerRunning = true
+	} else {
+		// reset offset
+		offset = 0
+
+		// increment subscript (index) of current message
+		currentMessage++
+
+		// if subscript of current message is out of range
+		if (currentMessage == ar.length)			// wrap around (start from beginning)
+			currentMessage = 0
+
+		// recursive call after specified time
+		timerID = setTimeout("showBanner()", pause)
+
+		// banner is running
+		bannerRunning = true
+	}
+}
+// -->
+</script>
+
+
+<script
+language="JavaScript"><!--
+startBanner()
+// -->
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<SCRIPT language=Javascript src="./themes/FX-FANTASY/fade.js"></SCRIPT>
+
+
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="100%">
+    
+
+
+
+
+
+
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="100%" bgcolor="#808080" background="./themes/FX-FANTASY/imagenes/bg_sup_header.jpg">
+      <table border="0" width="100%" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="50%"><embed width="114" height="42" src="./themes/FX-FANTASY/imagenes/inicio.swf"><embed width="114" height="42" src="./themes/FX-FANTASY/imagenes/enlaces.swf"><embed width="114" height="42" src="./themes/FX-FANTASY/imagenes/descargas.swf"><embed width="114" height="42" src="./themes/FX-FANTASY/imagenes/foros.swf"></td>
+          <td width="50%">
+            <table border="0" width="100%" cellspacing="0" cellpadding="0" height="42">
+              <tr>
+                <td>
+                  <p align="right"><img border="0" src="./themes/FX-FANTASY/imagenes/bg_sup__div_header.jpg" width="41" height="42"></td>
+                <td width="100%" background="./themes/FX-FANTASY/imagenes/bg_sup__segundo_header.jpg" valign="top">
+                  <p align="right"><img border="0" src="./themes/FX-FANTASY/imagenes/MADEinPERU.jpg" width="235" height="15"></p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" bgcolor="#586B76">
+      <table border="0" width="100%" cellspacing="0" cellpadding="0" background="./themes/FX-FANTASY/imagenes/bg_header_medio.jpg">
+        <tr>
+          <td width="33%"><font color="#FFFFFF"><embed width="462" height="148" src="./themes/FX-FANTASY/imagenes/logo.swf"></font></td>
+          <td><img border="0" src="./themes/FX-FANTASY/imagenes/imag_header_medio.jpg" width="218" height="148"></td>
+          <td width="34%">&nbsp;</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" background="./themes/FX-FANTASY/imagenes/bg1_inf_header.jpg">
+      <table border="0" width="100%" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><img border="0" src="./themes/FX-FANTASY/imagenes/lados_inf_header.jpg" width="28" height="36"><a href="./modules.php?name=Your_Account&op=new_user"><img border="0" src="./themes/FX-FANTASY/imagenes/registrate_inf_header.jpg" width="99" height="36"></a></td>
+          <td background="./themes/FX-FANTASY/imagenes/bg2_inf_header.jpg"><img border="0" src="./themes/FX-FANTASY/imagenes/izq_inf_header.jpg" width="45" height="36"></td>
+          <td width="100%" background="./themes/FX-FANTASY/imagenes/bg2_inf_header.jpg">
+            <p align="center"><img border="0" src="./themes/FX-FANTASY/imagenes/centro_inf_header.jpg" width="119" height="36"></td>
+          <td><img border="0" src="./themes/FX-FANTASY/imagenes/der_inf_header.jpg" width="43" height="36"></td>
+          <td align="right"><a href="index.php"><img border="0" src="./themes/FX-FANTASY/imagenes/chat_inf_header.jpg" width="59" height="36"></a><img border="0" src="./themes/FX-FANTASY/imagenes/lados_inf_header.jpg" width="28" height="36"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+<tr valign="top">
+  <td valign="top" width="1" background="themes/FX-FANTASY/images/7px.gif">

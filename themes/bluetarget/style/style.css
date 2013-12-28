@@ -1,0 +1,91 @@
+body
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size  : 10px;
+	
+	scrollbar-3dlight-color:black; 
+	scrollbar-arrow-color:black;
+	scrollbar-base-color:#505F7D;
+	scrollbar-darkshadow-color:black;
+	scrollbar-face-color:#505F7D;
+	scrollbar-highlight-color:;
+	scrollbar-shadow-color:black;
+}
+
+a:link,a:active,a:visited {  text-decoration: none; color : {T_BODY_LINK}; }
+a:hover		{ text-decoration: none; color : ff9900; }
+
+table,tr,td,p,input,select,textarea
+{ 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size  : 10px;
+}
+
+a
+{ 
+	color          : #ffffff;
+	text-decoration: none; 
+}
+
+a:hover
+{
+	color          : #ff9900;
+	text-decoration: none;
+}
+
+.ds
+{
+	width:100%; 
+	color:#FFFFFF; 
+	filter:dropshadow(color=#000000,offx=1, offy=1, positive=1), glow(color=#000000, strength=0);
+}
+
+.ds2
+{
+	width:100%; 
+	color:#000000; 
+	filter:dropshadow(color=#FFFFFF,offx=1, offy=1, positive=1), glow(color=#FFFFFF, strength=0);
+	font-size: 11px;
+}
+.title
+{
+	width:100%; 
+	color:#FFFFFF; 
+	filter:dropshadow(color=#000000,offx=1, offy=1, positive=1), glow(color=#000000, strength=0);
+}
+.content
+{ 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size  : 10px;
+}
+.boxcontent
+{ 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size  : 10px;
+}
+.option
+{ 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size  : 10px;
+	width:100%; 
+	color:#FFFFFF; 
+	filter:dropshadow(color=#000000,offx=1, offy=1, positive=1), glow(color=#000000, strength=0);
+}
+.tiny
+{ 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size  : 10px;
+}
+.footmsg
+{ 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size  : 10px;
+	color      : #000000;
+}
+
+.bigtitle
+{ 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size  : 20px;
+}
+img{border:0}

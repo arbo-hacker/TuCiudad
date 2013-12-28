@@ -1,0 +1,177 @@
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td bgcolor="#000000"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td bgcolor="#003366"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td background="themes/XetaTheme/images/menufondo.jpg" width="300"><img src="themes/XetaTheme/images/logo.jpg"></td>
+                <td background="themes/XetaTheme/images/menufondo.jpg">&nbsp;</td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="150" height="25" background="themes/XetaTheme/images/cellpic1.gif"><table width="100%" border="0" cellspacing="0" cellpadding="4">
+                    <tr>
+                      <td nowrap><font class="content">$theuser</font></td>
+                    </tr>
+                  </table></td>
+                <td background="themes/XetaTheme/images/cellpic1.gif"><table width="100%" border="0" cellspacing="0" cellpadding="4">
+                    <tr>
+                      <td nowrap>
+<div align="center"><font class="content"><strong>::</strong>&nbsp;<a href="index.php">Inicio</a> 
+                    &nbsp;<strong>::</strong>&nbsp; <a href="modules.php?name=QuienesSomos">Quienes Somos</a> 
+                    &nbsp;<strong>::</strong>&nbsp; <a href="modules.php?name=Servicios">Servicios</a>
+                    &nbsp;<strong>::</strong>&nbsp; <a href="modules.php?name=Contactanos">Contactanos</a> 
+                    &nbsp;<strong>::</strong></font></div></td>
+                    </tr>
+                  </table></td>
+                <td width="150" background="themes/XetaTheme/images/cellpic1.gif"><table width="100%" border="0" cellspacing="0" cellpadding="4">
+                    <tr>
+                      <td nowrap>
+<div align="center"><font class="content">
+<!--ORIGINAL
+<FORM ACTION="modules.php" METHOD="GET">
+	<input type="hidden" name="name" value="Busque">
+	<INPUT TYPE="text" NAME="Busq">
+	<INPUT type=hidden name=T1 value=T>
+	<INPUT TYPE="submit" VALUE="Busqueda">
+</FORM>
+ORIGINAL-->
+<FORM ACTION="modules.php" METHOD="GET">
+	<input type="hidden" name="name" value="PreVenta">
+	<INPUT TYPE="text" NAME="Busq">
+	<INPUT type=hidden name=T1 value=T>
+	<INPUT TYPE="submit" VALUE="Busqueda">
+</FORM>
+                         </font></div></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td height="3" bgcolor="#003366"><img src="themes/XetaTheme/images/1px.gif" width="1" height="1"></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+
+
+
+
+
+<script language="JavaScript">
+<!--
+// Copyright (c) 1996-1997 Tomer Shiran. All rights reserved.
+// Permission given to use the script provided that this notice remains as is.
+// Additional scripts can be found at http://www.geocities.com/~yehuda/
+
+// set speed of banner (pause in milliseconds between characters)
+var speed = 50 // decrease value to increase speed (must be positive)
+
+// set pause between completion of message and beginning of following message
+var pause = 3000 // increase value to increase pause
+
+// set initial values
+var timerID = null
+var bannerRunning = false
+
+// create global array
+var ar = new Array()
+
+// assign the strings to the array's elements
+ar[0] = ">>>>._.·´¯`»|N|U|K|E|B||A|Z|A|R| |2|0|0|3|«´¯`·._.<<<<"
+ar[1] = "  Diseño Grafico, SoftWARE, Informacion, Cientos de Themes Traducidos al español....."
+ar[2] = "..... Manuales, Recursos, Scripts....."
+ar[3] = "..... Comunidades, Webmasters, Themes, Servicios Especializados, ....."
+ar[4] = "..... Virus, Enlaces,Top, Downloads ....."
+ar[5] = "..... Foros, Encuestas,Chat  ....."
+ar[6] = "..... Gran variedad de recursos para Nuke y mas ....."
+
+// set index of first message to be displayed first
+var currentMessage = 0
+
+// set index of last character to be displayed first
+var offset = 0
+
+// stop the banner if it is currently running
+function stopBanner() {
+	// if banner is currently running
+	if (bannerRunning)
+		// stop the banner
+		clearTimeout(timerID)
+
+	// timer is now stopped
+	bannerRunning = false
+}
+
+// start the banner
+function startBanner() {
+	// make sure the banner is stopped
+	stopBanner()
+
+	// start the banner from the current position
+	showBanner()
+}
+
+// type-in the current message
+function showBanner() {
+	// assign current message to variable
+	var text = ar[currentMessage]
+
+	// if current message has not finished being displayed
+	if (offset < text.length) {
+		// if last character of current message is a space
+		if (text.charAt(offset) == " ")
+			// skip the current character
+			offset++			
+
+		// assign the up-to-date to-be-displayed substring
+		// second argument of method accepts index of last character plus one
+		var partialMessage = text.substring(0, offset + 1) 
+
+		// display partial message in status bar
+		window.status = partialMessage
+
+		// increment index of last character to be displayed
+		offset++ // IE sometimes has trouble with "++offset"
+
+		// recursive call after specified time
+		timerID = setTimeout("showBanner()", speed)
+
+		// banner is running
+		bannerRunning = true
+	} else {
+		// reset offset
+		offset = 0
+
+		// increment subscript (index) of current message
+		currentMessage++
+
+		// if subscript of current message is out of range
+		if (currentMessage == ar.length)
+			// wrap around (start from beginning)
+			currentMessage = 0
+
+		// recursive call after specified time
+		timerID = setTimeout("showBanner()", pause)
+
+		// banner is running
+		bannerRunning = true
+	}
+}
+// -->
+</script>
+
+
+<script
+language="JavaScript"><!--
+startBanner()
+// -->
+</script>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+<tr valign="top">
+  <td valign="top" width="1" background="themes/XetaTheme/images/7px.gif">
