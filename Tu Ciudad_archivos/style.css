@@ -1,0 +1,69 @@
+FONT {
+	FONT-SIZE: 11px; FONT-FAMILY: Verdana,Helvetica
+}
+TD {
+	FONT-SIZE: 11px; FONT-FAMILY: Verdana,Helvetica
+}
+BODY {
+	FONT-SIZE: 11px; FONT-FAMILY: Verdana,Helvetica
+}
+P {
+	FONT-SIZE: 11px; FONT-FAMILY: Verdana,Helvetica
+}
+DIV {
+	FONT-SIZE: 11px; FONT-FAMILY: Verdana,Helvetica
+}
+INPUT {
+	FONT-SIZE: 11px; FONT-FAMILY: Verdana,Helvetica
+}
+TEXTAREA {
+	FONT-SIZE: 11px; FONT-FAMILY: Verdana,Helvetica
+}
+FORM {
+	FONT-SIZE: 11px; FONT-FAMILY: Verdana,Helvetica
+}
+A:link {
+	BACKGROUND: none transparent scroll repeat 0% 0%; FONT: 11px Tahoma; COLOR: #9c0403; TEXT-DECORATION: underline
+}
+A:active {
+	BACKGROUND: none transparent scroll repeat 0% 0%; FONT: 11px Tahoma; COLOR: #9c0403; TEXT-DECORATION: underline
+}
+A:visited {
+	BACKGROUND: none transparent scroll repeat 0% 0%; FONT: 11px Tahoma; COLOR: #9c0403; TEXT-DECORATION: underline
+}
+A:hover {
+	BACKGROUND: none transparent scroll repeat 0% 0%; FONT: 11px Tahoma; COLOR: #9c0403; TEXT-DECORATION: underline
+}
+.title {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #980201; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none
+}
+.content {
+	FONT-SIZE: 11px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #980201; FONT-FAMILY: Verdana, Helvetica
+}
+.storytitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #363636; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none
+}
+.storycat {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #000000; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: underline
+}
+.boxtitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #363636; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none
+}
+.boxcontent {
+	FONT-SIZE: 12px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #000000; FONT-FAMILY: Verdana, Helvetica
+}
+.option {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #eb3c1d; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none
+}
+.tiny {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #980201; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none
+}
+.footmsg {
+	FONT-WEIGHT: normal; FONT-SIZE: 8px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #000000; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none
+}
+.footmsg_l {
+	FONT-WEIGHT: normal; FONT-SIZE: 8px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #000000; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: underline
+}
+.box {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 11px; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid; FONT-FAMILY: Verdana,Helvetica; BACKGROUND-COLOR: #ffffff
+}
